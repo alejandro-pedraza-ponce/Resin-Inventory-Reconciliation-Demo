@@ -1,36 +1,39 @@
 # Resin Inventory Reconciliation Demo
 
-An Excel-based workflow automation project designed to simplify a multi-step inventory adjustment process from the initial inventory comparison through final reporting.
+## Purpose
 
-## Why I Built It
-
-This project started with a repetitive manual task: comparing physical inventory against system inventory and calculating the differences.
-
-As I worked through the process, I realized there were additional repetitive steps that could also be automated, including determining required inventory movements, finding available production orders, tracking quantities, matching work centers, and preparing the final reports.
-
-What started as automating one calculation gradually became a tool for automating most of the workflow.
+Automates the inventory adjustment process by comparing physical inventory to system inventory, identifying differences, determining the required movements, connecting those movements to production orders and work centers, and generating copy-ready entries for the final reports.
 
 ## Workflow
 
 **Source Reports → Compare Physical to System Inventory → Identify Movements Needed → Select Orders & Assign Quantities → Match Work Centers → Generate Reports**
 
-## What It Does
+## Source Reports
 
-- Compares physical inventory against system inventory automatically.
+The first four sheets contain data from separate operational reports: Physical Inventory, System Inventory, Production Orders, and Work Centers.
+
+The first three reports provide the data needed to identify inventory differences and determine the required movement: Consumption or Reversal.
+
+The Work Center Report is obtained after Order Allocation because the production orders must first be selected. Column H, **Orders Used**, in the Order Allocation sheet identifies the production orders actually used, allowing the Work Center Report to retrieve only the information needed for those specific orders rather than processing all available production data.
+
+## How to Use
+
+1. Review the source report sheets.
+2. Open **Inventory Reconciliation** to compare physical inventory to system inventory and identify differences.
+3. The workbook determines whether a **Consumption, Reversal, or no movement** is required.
+4. Open **Order Allocation** to select the production order(s) used for each movement and assign the appropriate quantities (lbs).
+5. Use Column H, **Orders Used**, to obtain the Work Center Report for the selected production orders.
+6. The selected production orders are matched to their work centers and used to generate copy-ready entries for the final reports.
+
+## Automation Highlights
+
+- Compares physical inventory to system inventory automatically.
 - Identifies inventory differences requiring action.
-- Determines whether a Consumption, Reversal, or no movement is required.
-- Uses a ±5,000 lb tolerance to prevent unnecessary movements.
+- Determines the required inventory movement.
 - Accounts for incoming material that may temporarily affect inventory differences.
-- Connects materials to available production orders.
-- Allows the user to select the production orders actually used and assign quantities.
+- Connects materials to available production orders and work centers.
 - Tracks quantities assigned and quantities remaining.
-- Uses only the selected production orders to obtain the required work center information.
-- Matches selected production orders to their corresponding work centers.
 - Generates formatted, copy-ready entries for two final reports.
-
-## Human Control
-
-The workbook automates calculations and repetitive steps, but the user remains in control of important decisions such as selecting which production orders are actually used and how quantities are allocated between them.
 
 ## Video Demo
 
@@ -38,33 +41,17 @@ The workbook automates calculations and repetitive steps, but the user remains i
 
 ## Demo Workbook
 
-The repository includes the complete sanitized Excel workbook:
+The complete sanitized Excel demo is included in this repository:
 
 **`Resin-Inventory-Reconciliation-Demo.xlsx`**
 
-Download the workbook to explore the workflow and formulas.
-
-> **Note:** The workbook uses modern Excel functions and is intended for a current version of Microsoft Excel.
-
 ## Demo Data
 
-All data in this workbook is synthetic and was created solely for demonstration purposes.
+All data in this workbook is synthetic and was created solely for demonstration purposes. No company, employee, customer, or production data is included.
 
-**No company, employee, customer, or production data is included.**
+## Color Guide
 
-## Tools
-
-- Microsoft Excel
-- Dynamic Array Formulas
-- LET
-- FILTER
-- XLOOKUP
-- MAP
-- SCAN
-- REDUCE
-- Conditional Formatting
-- Data Validation
-
-## Project Goal
-
-The goal of this project was not simply to automate a calculation. It was to understand the entire workflow, identify repetitive manual steps, and create a solution that makes the process faster, more consistent, and easier to follow.
+- 🟢 **Green** = Within ±5,000 lbs tolerance. No inventory movement required.
+- 🟡 **Yellow** = Difference exceeds ±5,000 lbs. Inventory movement required.
+- 🔴 **Red** = Incoming Material. No movement is required because the inventory difference may be temporary while material is being received.
+- ⚫ **Gray** = N/A. Product is excluded from normal adjustment processing.
