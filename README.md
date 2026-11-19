@@ -1,6 +1,6 @@
 # Resin Inventory Reconciliation Demo
 
-## Purpose
+### Purpose
 
 Automates the inventory adjustment process by comparing physical inventory to system inventory, identifying differences, determining the required movements, connecting those movements to production orders and work centers, and generating copy-ready entries for the final reports.
 
