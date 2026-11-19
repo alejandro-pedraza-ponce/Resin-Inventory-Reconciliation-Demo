@@ -69,3 +69,10 @@ All data in this workbook is synthetic and was created solely for demonstration 
 - 🟡 **Yellow** = Difference exceeds ±5,000 lbs. Inventory movement required.
 - 🔴 **Red** = Incoming Material. No movement is required because the inventory difference may be temporary while material is being received.
 - ⚫ **Gray** = N/A. Product is excluded from normal adjustment processing.
+
+##Technologies Used
+
+<div>
+  <img src="https://img.icons8.com/color/1200/microsoft-excel-2019--v1.jpg" title="Microsoft Excel" alt="Microsoft Excel" width="60" height="60">&nbsp;&nbsp;
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-Xo6QRq6JjoFXRlWyotLzm-BkxQFxcmlxC8x-ckhQA&s=10" title="Microsoft Copilot" alt="Microsoft Copilot" width="60" height="60">
+</div>
