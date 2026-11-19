@@ -8,14 +8,6 @@ Automates the inventory adjustment process by comparing physical inventory to sy
 
 **Source Reports → Compare Physical to System Inventory → Identify Movements Needed → Select Orders & Assign Quantities → Match Work Centers → Generate Reports**
 
-## Source Reports
-
-The first four sheets contain data from separate operational reports: Physical Inventory, System Inventory, Production Orders, and Work Centers.
-
-The first three reports provide the data needed to identify inventory differences and determine the required movement: Consumption or Reversal.
-
-The Work Center Report is obtained after Order Allocation because the production orders must first be selected. Column H, **Orders Used**, in the Order Allocation sheet identifies the production orders actually used, allowing the Work Center Report to retrieve only the information needed for those specific orders rather than processing all available production data.
-
 ## How to Use
 
 1. Review the source report sheets.
