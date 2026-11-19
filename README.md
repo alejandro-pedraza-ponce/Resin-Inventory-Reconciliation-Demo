@@ -70,7 +70,7 @@ All data in this workbook is synthetic and was created solely for demonstration 
 - 🔴 **Red** = Incoming Material. No movement is required because the inventory difference may be temporary while material is being received.
 - ⚫ **Gray** = N/A. Product is excluded from normal adjustment processing.
 
-##Technologies Used
+## Technologies Used
 
 <div>
   <img src="https://img.icons8.com/color/1200/microsoft-excel-2019--v1.jpg" title="Microsoft Excel" alt="Microsoft Excel" width="60" height="60">&nbsp;&nbsp;
