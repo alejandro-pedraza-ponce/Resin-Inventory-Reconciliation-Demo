@@ -39,15 +39,15 @@ The Work Center Report is obtained after Order Allocation because the production
 
 ### Inventory Reconciliation
 
-![Inventory Reconciliation](inventory-reconciliation.png)
+![Inventory Reconciliation](Inventory%20Reconciliation.png)
 
 ### Order Allocation
 
-![Order Allocation](order-allocation.png)
+![Order Allocation](Order%20Allocation.png)
 
 ### Generated Report
 
-![Generated Report](generated-report.png)
+![Generated Report](Generated%20Report.png)
 
 ## Video Demo
 
