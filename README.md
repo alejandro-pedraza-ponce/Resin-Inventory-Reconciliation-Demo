@@ -35,6 +35,20 @@ The Work Center Report is obtained after Order Allocation because the production
 - Tracks quantities assigned and quantities remaining.
 - Generates formatted, copy-ready entries for two final reports.
 
+## Screenshots
+
+### Inventory Reconciliation
+
+![Inventory Reconciliation](inventory-reconciliation.png)
+
+### Order Allocation
+
+![Order Allocation](order-allocation.png)
+
+### Generated Report
+
+![Generated Report](generated-report.png)
+
 ## Video Demo
 
 [▶ Watch the Project Walkthrough](https://www.loom.com/share/d8f5c1e829e843fc99d595889ac4732c)
